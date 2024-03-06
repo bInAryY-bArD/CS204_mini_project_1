@@ -1,9 +1,10 @@
 # --------------------------- CS204 Mini Project ---------------------------
 
 By :  
-## Akash (SPOC)         2022CSB1064
-## Aniket Kumar Sahil   2022CSB1067
+Akash (SPOC)         2022CSB1064
+Aniket Kumar Sahil   2022CSB1067
 
+## Introduction:
 The goal of the project is to create a RISCV assembler (like the one of Venus) 
 it takes an assembly code from a .asm file as input and then generate its machine code in a .mc file as output.
   
@@ -23,18 +24,29 @@ it takes an assembly code from a .asm file as input and then generate its machin
         >> .dword       >> .asciz
 
   ## PROCESS :
-    The poject has been divided into various sub parts.
+  The poject has been divided into various sub parts.
       
  ### Input - Output :
-            
+Here we just make a skeleton of taking input, separating terms and writing an output.
+
             >> Involves reading the given .asm file line by line
             >> separating the various terms (like the instructions, immediate values, registers, offset, etc.)
             >> Writing the output into a .mc file.
-                  ** NOTE : Here we just make a skeleton of taking input, separating terms and writing an output.**
 
 ### Processing : 
             
-            >> This is the main part of our project which involves converting to machine code.
+  This is the main part of our project which involves converting to machine code. Also it keeps the track of the program counter(PC). 
+  
             >> First it detects the format of instruction
             >> Then it converts the code into machine code accordingly.
             >> Then it saves the string within the 'converted_code' and update into the .mc file
+
+## Memory Handling : 
+  This part handles the assembly directives of the code. We maintain a separate .txt file telling us what is stored in the memory and where.
+  These assembly directives don't get converted into a machine code, instead data gets updated in the memory.
+
+            >> First it detects the assembly directive being used.
+            >> Then it uploads the value accordingly in the memory.
+            >> We maintain a separate pointer which points at the next usable memory byte
+            >> Weincrement it accordingly as we keep on adding data.
+            
