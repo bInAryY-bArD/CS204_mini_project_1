@@ -41,7 +41,7 @@ Here we just make a skeleton of taking input, separating terms and writing an ou
             >> Then it converts the code into machine code accordingly.
             >> Then it saves the string within the 'converted_code' and update into the .mc file
 
-## Memory Handling : 
+### Memory Handling : 
   This part handles the assembly directives of the code. We maintain a separate .txt file telling us what is stored in the memory and where.
   These assembly directives don't get converted into a machine code, instead data gets updated in the memory.
 
