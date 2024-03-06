@@ -1,7 +1,7 @@
 -------------------------------------------------- CS204 Mini Project --------------------------------------------------
 
-By :  Akash (SPOC)         2022CSB1064
-      Aniket Kumar Sahil   2022CSB1067
+By :  Akash (SPOC)         2022CSB1064 \n
+      \tAniket Kumar Sahil   2022CSB1067
 
 The goal of the project is to create a RISCV assembler (like the one of Venus)
  it takes an assembly code from a .asm file as input and then generate its machine code in a .mc file as output.
