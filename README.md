@@ -1,7 +1,7 @@
 # --------------------------- CS204 Mini Project ---------------------------
 
-By :  
-Akash (SPOC)         2022CSB1064
+By :  <br>
+Akash (SPOC)         2022CSB1064 <br>
 Aniket Kumar Sahil   2022CSB1067
 
 ## Introduction:
