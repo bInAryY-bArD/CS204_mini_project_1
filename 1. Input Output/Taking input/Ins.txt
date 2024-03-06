@@ -1,0 +1,4 @@
+Using the istream class of the fstream library, we can simply read input from the file we mention in the code. 
+
+We can set a loop based on the validity of the input from the file. 
+If there is no input we can take from the flie then the loop breaks
