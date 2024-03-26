@@ -119,11 +119,15 @@ void check_accuracy(){
 }
 
 
-
-
-long long BintoImm(const string& binary) {
-    bitset<64> bits(binary); // Assuming 64-bit binary representation for long long
-    return static_cast<long long>(bits.to_ullong());
+long long BintoImm( string binary) {
+   ll a = 1;
+   ll ans = 0;
+   for(ll i = 12; i > 0; i--){
+    ans += a*(binary[i] - '0');
+    a *= 2;
+   }
+   ans -= a*(binary[0]-'0');
+   return ans;
 }
 
 map <ll,ll> visited;
@@ -255,6 +259,7 @@ int main(){
         string opcode = bin_ins.substr(25, 7);
         
         if(opcode == "1100011"){ //branch
+            imm_b = "";
             imm_b.push_back(bin_ins[0]);
             imm_b.push_back(bin_ins[24]);
             imm_b += bin_ins.substr(1,6) + bin_ins.substr(20, 4) + "0";
